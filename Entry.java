@@ -1,8 +1,29 @@
 public class Entry{
-    String eng, ger;
+    //eng string may have multiple words (parallels to german one)
+    //ger has one word
+    private String eng, ger;
     private String def;
 
+    public Entry(String g, String e, String d){
+	eng = e;
+	ger = g;
+	def = d
+    }
+    
+    public String getEng(){
+	return eng;
+    }
+
+    public String getWort(){
+	return ger;
+    }
+
+    public String getDef(){
+	return def;
+    }
+
     /*
+check guimon.java for input things
 entries consist of word and definition
 make arrays containing linkedlists - each index holds and entry that is a linkedlist
 
