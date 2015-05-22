@@ -22,6 +22,8 @@ public class Entry{
 	return def;
     }
 
+    
+
     /*
 check guimon.java for input things
 entries consist of word and definition
