@@ -1,12 +1,16 @@
+import java.io.*;
+import java.util.*;
+
 public class Dict{
-    private ArrayList<Entry> entries = new ArrayList<Entry>();
+
+     ArrayList<Entry> entries = new ArrayList<Entry>();
     
     public void load() {
-	// loads dictionary
+	Scanner sc = new Scanner(new File("werdz.txt"));
     }
 
     public String search(String deutsch) {
-	
+	return "deutsch";
     }
 
 

@@ -7,7 +7,7 @@ public class Entry{
     public Entry(String g, String e, String d){
 	eng = e;
 	ger = g;
-	def = d
+	def = d;
     }
     
     public String getEng(){

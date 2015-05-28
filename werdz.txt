@@ -1,19 +1,19 @@
-apple; Apfel; 1. the round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh. Many varieties ahve been developed as dessert or cooking fruit or for making cider /n 2. the tree which bears apples, 3. the tree which bears apples;
+Apfel; apple; 1. the round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh. Many varieties ahve been developed as dessert or cooking fruit or for making cider /n 2. the tree which bears apples, 3. the tree which bears apples;
 
-banana; Banane; 1. a long curved fruitthat grows in clusters and has soft pulpy flesh and yellow skin when ripe /n 2. the tropical and subtropical plan that bears this fruit. It has very large leaves and resembles a palm, but lacks a woody trunk;
+Banane; banana; 1. a long curved fruitthat grows in clusters and has soft pulpy flesh and yellow skin when ripe /n 2. the tropical and subtropical plan that bears this fruit. It has very large leaves and resembles a palm, but lacks a woody trunk;
 
-cantaloupe; Bantaloup-Melone; 1. a small, round melon of a variety with orange flesh and ribbed skin;
+Bantaloup-Melone; cantaloupe; 1. a small, round melon of a variety with orange flesh and ribbed skin;
 
-durian; Durian; 1. an oval spiny tropical fruit containing a creamy pulp. Despite its fetid smell, it is highly esteemed for its flavor /n 2. the large tree that bears the durian fruit, native to Malaysia;
+Durian; durian; 1. an oval spiny tropical fruit containing a creamy pulp. Despite its fetid smell, it is highly esteemed for its flavor /n 2. the large tree that bears the durian fruit, native to Malaysia;
 
-eggplant; Aubergine; 1. the large egg-shaped fruit of an Old World plant, eaten as a vegetable. Its skin is typically dark purple, but the skin of certain cultivated varieties is white or yellow /n 2. thelarge plant of the nightshade family that bears the eggplant fruit;
+Aubergine; eggplant; 1. the large egg-shaped fruit of an Old World plant, eaten as a vegetable. Its skin is typically dark purple, but the skin of certain cultivated varieties is white or yellow /n 2. thelarge plant of the nightshade family that bears the eggplant fruit;
 
-fig; Fiege; 1. a soft pear-shaped fruit with sweet dark flesh and many small seeds, eaten fresh or dried /n 2. the deciduous Old World tree or shrub that bears the fig;
+Fiege; fig; 1. a soft pear-shaped fruit with sweet dark flesh and many small seeds, eaten fresh or dried /n 2. the deciduous Old World tree or shrub that bears the fig;
 
-grape; Traube; 1. a berry, typically green (classified as white), purple, red or black, growing in clusters on a grapevine, eaten as fruit, and used in makign wine /n 2. a dark purplish red color;
+Traube; grape; 1. a berry, typically green (classified as white), purple, red or black, growing in clusters on a grapevine, eaten as fruit, and used in makign wine /n 2. a dark purplish red color;
 
-huckleberries; Heidelbeeren; 1. a small, round, edible blue-black berry related to the blueberry /n 2. the low-growing North american shrub of the heath family that bears this fruit;
+Heidelbeeren; huckleberries; 1. a small, round, edible blue-black berry related to the blueberry /n 2. the low-growing North american shrub of the heath family that bears this fruit;
 
-jujube; Jujube; 1. the edible berrylike fruit of a Eurasian plant, formerly taken as a cough cure /n 2. the shrub or small tree that produces the jujube fruit, native to the warmer regions of Eurasia;
+Jujube; jujube; 1. the edible berrylike fruit of a Eurasian plant, formerly taken as a cough cure /n 2. the shrub or small tree that produces the jujube fruit, native to the warmer regions of Eurasia;
 
-kiwi; Schnepfenstrauss; 1. a flightless New Zealand bird with hairlike feathers, having a long down-curved bill with sensitive nostrils at the tip /n 2. a fruit with a thin hairy skin, green flesh, and black seeds;
+Schnepfenstrauss; kiwi; 1. a flightless New Zealand bird with hairlike feathers, having a long down-curved bill with sensitive nostrils at the tip /n 2. a fruit with a thin hairy skin, green flesh, and black seeds;
