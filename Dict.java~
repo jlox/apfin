@@ -1,6 +1,3 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import java.io.*;
 import java.util.*;
 
@@ -44,12 +41,7 @@ public class Dict{
 
     public static void main(String[] args){
 	Dict d = new Dict();
-	File file = new File("werdz.txt");
-	try {
-	    d.read(file);
-	} catch (IOException e){
-	    System.out.println("No file found");
-	}
+	d.read(werdz.txt);
 	d.makeDict();
 	// System.out.println(entries);
     }
