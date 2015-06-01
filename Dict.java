@@ -30,8 +30,8 @@ public class Dict{
 	String e, g, d;
 	while (i < ent.length){
 	    e = ent[i].substring(0, ent[i].indexOf("; "));
-	    g = ent[i].substring(ent[i].indexOf("; "), ent[i].substring(ent[i].indexOf("; ")).indexOf("; "));
-	    d = ent[i].substring(ent[i].substring(ent[i].indexOf("; ")).indexOf("; "), ent[i].length());
+	    g = ent[i].substring(ent[i].indexOf("; "), (ent[i].substring(ent[i].indexOf("; "))).indexOf("; ") + ent[i].indexOf("; "));
+	    d = ent[i].substring((ent[i].substring(ent[i].indexOf("; "))).indexOf("; ") + ent[i].indexOf("; "), ent[i].length());
 	    addit = new Entry(e,g,d);
 	    entries.add(addit);	    
 	    //entr.Entry(e, g, d);
