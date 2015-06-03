@@ -18,9 +18,18 @@ public class Dict{
     
     public void read(File file) throws IOException{
 	Scanner scanner = new Scanner(file);
-
-	while(scanner.hasNext()){
-	    ent = scanner.nextLine().split(";;");
+	String s;
+	int i = 0;
+	int c = 0;
+	while(scanner.hasNextLine()){
+	    c = c + 1;
+	    scanner.nextLine();
+	}
+	ent = new String[c];
+	while(scanner.hasNextLine()){
+	    s = scanner.nextLine();
+	    ent[i] = s;
+	    i = i + 1;
 	}
     }
 
@@ -37,8 +46,9 @@ public class Dict{
 	    //entr.Entry(e, g, d);
 	}
     }
+
     public String search(String deutsch) {
-	return "deutsch";
+	return deutsch;
     }
 
 
