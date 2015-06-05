@@ -7,37 +7,46 @@ import java.util.*;
 public class Dict{
 
     ArrayList<Entry> entries = new ArrayList<Entry>();
-
-   
-    private String[] ent;
+    
+    int c = 0;
     /*
-    public void load() {
-	Scanner sc = new Scanner(new File("werdz.txt"));
+    File file = new File("werdz.txt");
+
+    public Dict(File file){
+	Scanner sc = new Scanner(file);
     }
     */
+    
+    public int fileLength(File file) throws IOException{
+	Scanner scanner = new Scanner(file);
+	while(scanner.hasNextLine()){
+	    c = c + 1;
+	    scanner.nextLine();
+	}
+	c = c-1;
+	return c;
+    }
+
+    String ent[] = new String[c];
     
     public void read(File file) throws IOException{
 	Scanner scanner = new Scanner(file);
 	String s;
 	int i = 0;
-	int c = 0;
-	while(scanner.hasNextLine()){
-	    c = c + 1;
-	    scanner.nextLine();
-	}
-	ent = new String[c];
-	while(scanner.hasNextLine()){
-	    s = scanner.nextLine();
-	    ent[i] = s;
-	    i = i + 1;
+	if (ent.length != 0){
+	    while(scanner.hasNextLine()){
+		s = scanner.nextLine();
+		ent[i] = s;
+		i = i + 1;
+	    }
 	}
     }
-
+    
     public void makeDict(){
 	Entry addit;
 	int i = 0;
 	String e, g, d;
-	while (i < ent.length){
+	while (i < ent.length - 1){
 	    e = ent[i].substring(0, ent[i].indexOf("; "));
 	    g = ent[i].substring(ent[i].indexOf("; "), (ent[i].substring(ent[i].indexOf("; "))).indexOf("; ") + ent[i].indexOf("; "));
 	    d = ent[i].substring((ent[i].substring(ent[i].indexOf("; "))).indexOf("; ") + ent[i].indexOf("; "), ent[i].length());
@@ -56,11 +65,12 @@ public class Dict{
 	Dict d = new Dict();
 	File file = new File("werdz.txt");
 	try {
+	    d.fileLength(file);
 	    d.read(file);
 	} catch (IOException e){
 	    System.out.println("No file found");
 	}
 	d.makeDict();
-	// System.out.println(entries);
+	System.out.println(d.entries);
     }
 }
