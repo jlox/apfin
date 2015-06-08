@@ -13,13 +13,6 @@ public class Dict{
     File file = new File("werdz.txt");
     Scanner sc;
 
-    /*
-    try{
-	Scanner sc = new Scanner(file);
-    } catch (FileNotFoundException e){
-	return "There's no file!";
-    }
-    */
 
     public Dict() throws FileNotFoundException{
 	sc = new Scanner(file);
@@ -31,7 +24,7 @@ public class Dict{
 	    c = c + 1;
 	    sc.nextLine();
 	}
-	c = c-1;
+	//c = c-1;
 	return c;
     }
 
@@ -70,14 +63,17 @@ public class Dict{
 
     public static void main(String[] args) throws FileNotFoundException{
 	Dict d = new Dict();
-	//File file = new File("werdz.txt");
+	
 	System.out.println(d.file);
+
 	try {
-	    d.fileLength();
+	    System.out.println(d.fileLength());
 	    d.read();
 	} catch (IOException e){
 	    System.out.println("No file found");
 	}
+
+
 	d.makeDict();
 	System.out.println(d.entries);
     }
