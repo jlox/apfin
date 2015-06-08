@@ -11,25 +11,14 @@ public class Dict{
     int c = 0;
     
     File file = new File("werdz.txt");
-    Scanner sc;
 
-    /*
-    try{
-	Scanner sc = new Scanner(file);
-    } catch (FileNotFoundException e){
-	return "There's no file!";
-    }
-    */
-
-    public Dict() throws FileNotFoundException{
-	sc = new Scanner(file);
-    }
+    Scanner sc = new Scanner(file);
     
-    public int fileLength() throws IOException{
-	int c = 0;
-	while(sc.hasNextLine()){
+    public int fileLength(File file) throws IOException{
+	Scanner scanner = new Scanner(file);
+	while(scanner.hasNextLine()){
 	    c = c + 1;
-	    sc.nextLine();
+	    scanner.nextLine();
 	}
 	c = c-1;
 	return c;
@@ -37,12 +26,13 @@ public class Dict{
 
     String ent[] = new String[c];
     
-    public void read() throws IOException{
+    public void read(File file) throws IOException{
+	Scanner scanner = new Scanner(file);
 	String s;
 	int i = 0;
 	if (ent.length != 0){
-	    while(sc.hasNextLine()){
-		s = sc.nextLine();
+	    while(scanner.hasNextLine()){
+		s = scanner.nextLine();
 		ent[i] = s;
 		i = i + 1;
 	    }
@@ -68,13 +58,12 @@ public class Dict{
     }
 
 
-    public static void main(String[] args) throws FileNotFoundException{
+    public static void main(String[] args){
 	Dict d = new Dict();
 	//File file = new File("werdz.txt");
-	System.out.println(d.file);
 	try {
-	    d.fileLength();
-	    d.read();
+	    d.fileLength(file);
+	    d.read(file);
 	} catch (IOException e){
 	    System.out.println("No file found");
 	}
