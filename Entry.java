@@ -22,6 +22,9 @@ public class Entry{
 	return def;
     }
 
+    public String toString(){
+	return eng + ger + def;
+    }
     
 
     /*
