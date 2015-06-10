@@ -5,41 +5,45 @@ import java.io.*;
 import java.util.*;
 
 public class Dict{
-
+    
     ArrayList<Entry> entries = new ArrayList<Entry>();
     // what each entry is stored at - IN ENTRY FORM
     String e, g, d;
     
     
     File file = new File("werdz.txt");
-    Scanner sc;
-
-    public Dict() throws FileNotFoundException{
-	sc = new Scanner(file);
-    }
+    Scanner sc = null;
     
     int c = 0;
 
     public int fileLength(){
-	while(sc.hasNextLine()){
-	    c = c + 1;
-	    sc.nextLine();
+	try {
+	    sc = new Scanner(file);
+	    while(sc.hasNextLine()){
+		c = c + 1;
+		sc.nextLine();
+	    } 
+	    return c/2;
+	} catch (FileNotFoundException e){
+	    return c;
 	}
-	return c;
     }
 
     String ent[] = new String[fileLength()];
     // each entry is a line in werdz
-    
-    public void read() throws IOException{
-	String s;
-	int i = 0;
-	if (ent.length != 0){
+
+    public void makeEnt() throws IOException{
+	try {
+	    sc = new Scanner(file);
+	    String s;
+	    int i = 0;
 	    while(sc.hasNextLine()){
 		s = sc.nextLine();
 		ent[i] = s;
 		i = i + 1;
 	    }
+	} catch (FileNotFoundException e){
+	    ent = null;
 	}
     }
     
@@ -49,8 +53,8 @@ public class Dict{
 	//String e, g, d;
 	while (i < ent.length - 1){
 	    e = ent[i].substring(0, ent[i].indexOf("; "));
-	    g = ent[i].substring(ent[i].indexOf("; "), (ent[i].substring(ent[i].indexOf("; "))).indexOf("; ") + ent[i].indexOf("; "));
-	    d = ent[i].substring((ent[i].substring(ent[i].indexOf("; "))).indexOf("; ") + ent[i].indexOf("; "), ent[i].length());
+	    g = ent[i].substring(ent[i].indexOf("; "), (ent[i].substring(ent[i].indexOf("; ")).indexOf("; ") + ent[i].indexOf("; ")));
+	    d = ent[i].substring((ent[i].substring(ent[i].indexOf("; ")).indexOf("; ") + ent[i].indexOf("; ")), ent[i].length() - 1);
 	    addit = new Entry(e,g,d);
 	    entries.add(addit);	    
 	    //entr.Entry(e, g, d);
@@ -61,15 +65,15 @@ public class Dict{
 	return deutsch;
     }
 
-
     public static void main(String[] args) throws FileNotFoundException{
 	Dict d = new Dict();
 
 	try {
 	    System.out.println(d.fileLength());
+	    System.out.println(d.c);
 	    //System.out.println(d.ent.length);
-	    d.read();
-	    d.makeDict();
+	    d.makeEnt();
+	    //d.makeDict();
 	    //System.out.println(d.ent[0]);
 	    //System.out.println((d.entries.get(0)).toString());
 	} catch (IOException e){
