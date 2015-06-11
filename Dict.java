@@ -23,7 +23,7 @@ public class Dict{
 		c = c + 1;
 		sc.nextLine();
 	    } 
-	    return c/2;
+	    return c;
 	} catch (FileNotFoundException e){
 	    return c;
 	}
@@ -47,18 +47,33 @@ public class Dict{
 	}
     }
     
+    /*
     public void makeDict(){
 	Entry addit;
 	int i = 0;
-	//String e, g, d;
+	String e;
+	String g; 
+	String d;
 	while (i < ent.length - 1){
 	    e = ent[i].substring(0, ent[i].indexOf("; "));
 	    g = ent[i].substring(ent[i].indexOf("; "), (ent[i].substring(ent[i].indexOf("; ")).indexOf("; ") + ent[i].indexOf("; ")));
 	    d = ent[i].substring((ent[i].substring(ent[i].indexOf("; ")).indexOf("; ") + ent[i].indexOf("; ")), ent[i].length() - 1);
-	    addit = new Entry(e,g,d);
-	    entries.add(addit);	    
-	    //entr.Entry(e, g, d);
+	addit = new Entry(e,g,d);
+	entries.add(addit);
 	}
+	//return e + g + d;	        
+    }
+    */
+
+    public String test(){
+	String thing = ent[0];
+	String e;
+	String g;
+	String d;
+	e = thing.substring(0, thing.indexOf("; "));
+	g = thing.substring(thing.indexOf(";"), (thing.substring(thing.indexOf("; ")).indexOf("; ") + thing.indexOf("; ")));
+	d = thing.substring((thing.substring(thing.indexOf("; ")).indexOf("; ")+thing.indexOf("; ")), thing.length()-1);
+	return e + "/n" + g + "/n" + d;
     }
 
     public String search(String deutsch) {
@@ -71,10 +86,12 @@ public class Dict{
 	try {
 	    System.out.println(d.fileLength());
 	    System.out.println(d.c);
-	    //System.out.println(d.ent.length);
+	    System.out.println(d.ent.length);
 	    d.makeEnt();
 	    //d.makeDict();
-	    //System.out.println(d.ent[0]);
+	    System.out.println(d.ent[0]);
+	    System.out.println(d.ent[d.ent.length - 1]);
+	    System.out.println(d.test());
 	    //System.out.println((d.entries.get(0)).toString());
 	} catch (IOException e){
 	    System.out.println("No file found");
