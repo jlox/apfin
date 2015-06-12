@@ -10,11 +10,20 @@ public class Dict{
     // what each entry is stored at - IN ENTRY FORM
     String e, g, d;
     
-    
+    private static Scanner scanner = new Scanner(System.in);
+
     File file = new File("werdz.txt");
     Scanner sc = null;
     
     int c = 0;
+
+    public String findG(String word){
+	int i = 0;
+	while ((i < entries.size()) && (word != entries.get(i).getEng())){
+	    i = i + 1;
+	}
+	return entries.get(i).getWort();
+    }
 
     public int fileLength(){
 	try {
@@ -47,7 +56,6 @@ public class Dict{
 	}
     }
     
-    /*
     public void makeDict(){
 	Entry addit;
 	int i = 0;
@@ -55,26 +63,30 @@ public class Dict{
 	String g; 
 	String d;
 	while (i < ent.length - 1){
-	    e = ent[i].substring(0, ent[i].indexOf("; "));
-	    g = ent[i].substring(ent[i].indexOf("; "), (ent[i].substring(ent[i].indexOf("; ")).indexOf("; ") + ent[i].indexOf("; ")));
-	    d = ent[i].substring((ent[i].substring(ent[i].indexOf("; ")).indexOf("; ") + ent[i].indexOf("; ")), ent[i].length() - 1);
-	addit = new Entry(e,g,d);
-	entries.add(addit);
-	}
-	//return e + g + d;	        
+	    String[] parts = ent[i].split("; ");
+	    e = parts[0];
+	    g = parts[1];
+	    d = parts[2];
+	    addit = new Entry(e,g,d);
+	    //System.out.println(addit.toString());
+	    entries.add(addit);
+	    i = i + 1;
+	}       
     }
-    */
-
+    
+    /*
     public String test(){
 	String thing = ent[0];
 	String e;
 	String g;
 	String d;
-	e = thing.substring(0, thing.indexOf("; "));
-	g = thing.substring(thing.indexOf(";"), (thing.substring(thing.indexOf("; ")).indexOf("; ") + thing.indexOf("; ")));
-	d = thing.substring((thing.substring(thing.indexOf("; ")).indexOf("; ")+thing.indexOf("; ")), thing.length()-1);
+	String[] parts = thing.split("; ");
+	e = parts[0];
+	g = parts[1];
+	d = parts[2];
 	return e + "/n" + g + "/n" + d;
     }
+    */
 
     public String search(String deutsch) {
 	return deutsch;
@@ -84,15 +96,20 @@ public class Dict{
 	Dict d = new Dict();
 
 	try {
-	    System.out.println(d.fileLength());
-	    System.out.println(d.c);
+	    System.out.println("What word would you like?");
+	    String input = scanner.nextLine();
+	    //System.out.println(d.fileLength());
+	    //System.out.println(d.c);
+	    System.out.println(d.findG(input));
 	    System.out.println(d.ent.length);
 	    d.makeEnt();
-	    //d.makeDict();
-	    System.out.println(d.ent[0]);
-	    System.out.println(d.ent[d.ent.length - 1]);
-	    System.out.println(d.test());
-	    //System.out.println((d.entries.get(0)).toString());
+	    d.makeDict();
+	    //System.out.println(d.entries.size());
+	    //String out =  d.entries.get(0).toString();
+	    //System.out.println(out);
+	    //System.out.println(d.ent[0]);
+	    //System.out.println(d.ent[d.ent.length - 1]);
+	    //System.out.println(d.test());
 	} catch (IOException e){
 	    System.out.println("No file found");
 	}
