@@ -17,6 +17,14 @@ public class Dict{
     
     int c = 0;
 
+    public String findG(String word){
+	int i = 0;
+	while ((i < entries.size()) && (word != entries.get(i).getEng())){
+	    i = i + 1;
+	}
+	return entries.get(i).getWort();
+    }
+
     public int fileLength(){
 	try {
 	    sc = new Scanner(file);
@@ -84,76 +92,18 @@ public class Dict{
 	return deutsch;
     }
 
-    public String findG(String word){
-	int i = 0;
-	String result = "We can't find that word!";
-	while (i < entries.size()){
-	    //System.out.println(entries.get(i).toString() + "/n");
-	    if ((entries.get(i)).getEng().equals(word)){
-		result = (entries.get(i)).getWort();
-	    }
-	    i = i + 1;
-	}
-	return result;
-    }
-
-    public String findE(String gword){
-	int i = 0;
-	String result = "We can't find that word!";
-	while (i < entries.size()){
-	    //System.out.println(entries.get(i).toString() + "/n");
-	    if ((entries.get(i)).getWort().equals(gword)){
-		result = (entries.get(i)).getEng();
-	    }
-	    i = i + 1;
-	}
-	return result;
-    }
-
-    public String findD(String word){
-	int i = 0;
-	String result = "We can't find that word!";
-	while (i < entries.size()){
-	    //System.out.println(entries.get(i).toString() + "/n");
-	    if ((entries.get(i)).getEng().equals(word)){
-		result = (entries.get(i)).getDef();
-	    }
-	    i = i + 1;
-	}
-	return result;
-    }
-
     public static void main(String[] args) throws FileNotFoundException{
 	Dict d = new Dict();
 
 	try {
-	    d.makeEnt();
-	    d.makeDict();
-	    System.out.println("What function would you like?");
-	    System.out.println("1. English to German");
-	    System.out.println("2. German to English");
-	    System.out.println("3. English Definition");
-	    System.out.println("Please select the number of your choice!");
+	    System.out.println("What word would you like?");
 	    String input = scanner.nextLine();
-	    if (input.equals("1")){
-		System.out.println("What word would you like translated?");
-		input = scanner.nextLine();
-		System.out.println(d.findG(input));
-	    } else if (input.equals("2")){
-		System.out.println("What word would you like translated?");
-		input = scanner.nextLine();
-		System.out.println(d.findE(input));
-	    } else if (input.equals("3")){
-		System.out.println("Which word's definition would you like?");
-		input = scanner.nextLine();
-		System.out.println(d.findD(input));
-	    } else {
-		System.out.println("Sorry, we don't recognize that command. Please make sure you are entering JUST the number of the choice you'd like!");
-	    }
-	    
 	    //System.out.println(d.fileLength());
 	    //System.out.println(d.c);
-	    //System.out.println(d.ent.length);
+	    System.out.println(d.findG(input));
+	    System.out.println(d.ent.length);
+	    d.makeEnt();
+	    d.makeDict();
 	    //System.out.println(d.entries.size());
 	    //String out =  d.entries.get(0).toString();
 	    //System.out.println(out);
