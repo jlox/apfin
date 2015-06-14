@@ -68,19 +68,7 @@ public class Dict{
 	}       
     }
     
-    /*
-    public String test(){
-	String thing = ent[0];
-	String e;
-	String g;
-	String d;
-	String[] parts = thing.split("; ");
-	e = parts[0];
-	g = parts[1];
-	d = parts[2];
-	return e + "/n" + g + "/n" + d;
-    }
-    */
+
 
     public String search(String deutsch) {
 	return deutsch;
@@ -90,7 +78,7 @@ public class Dict{
 	String result = "We can't find that word!";
 	for (int i = 0; i < entries.size() ; i++) {
 	    // checks each entry
-	    if ( (entries.get(i).getEng().toLowerCase()).equals(word.toLowerCase())){
+	    if ( (entries.get(i).getEng().toLowerCase()).contains(word.toLowerCase())){
 		result = (entries.get(i)).getWort();
 	    }
 	}
@@ -109,9 +97,9 @@ public class Dict{
     }
 
     public String findD(String word){
-	String result = "We can't find that word!";
+	String result = "";
 	for (int i = 0; i < entries.size() ; i++) {
-	    if ((entries.get(i)).getEng().equals(word)){
+	    if ((entries.get(i)).getEng().contains(word.toLowerCase())){
 		result = (entries.get(i)).getDef();
 	    }
 	}
@@ -124,6 +112,23 @@ public class Dict{
 	try {
 	    d.makeEnt();
 	    d.makeDict();
+	    System.out.println("\n ~~Welcome to the Deutsch Java Wordbook!~~ \n Willkommen auf dem Deutsch-Englische Java Woertbuch");
+	    System.out.println("We translate from German to English and English to German.");
+	    //System.out.print("We have ");
+	    // System.out.print(d.entries.size());
+	    //	    System.out.print(" words. \n");
+	    System.out.println("Type your word.");
+	    String input = scanner.nextLine();
+	    System.out.println("\n \n English-to-German: ");
+	    System.out.println(d.findG(input));
+	    System.out.println("\n German-to-English: ");
+	    System.out.println(d.findE(input));
+	    System.out.println("\n Definition(s): ");
+	    System.out.println(d.findD(input));
+	    System.out.println(d.findD(d.findE(input)));
+	    System.out.println("\n \n");
+
+	    /*
 	    System.out.println("What function would you like?");
 	    System.out.println("1. English to German");
 	    System.out.println("2. German to English");
@@ -145,16 +150,8 @@ public class Dict{
 	    } else {
 		System.out.println("Sorry, we don't recognize that command. Please make sure you are entering JUST the number of the choice you'd like!");
 	    }
-	    
-	    //System.out.println(d.fileLength());
-	    //System.out.println(d.c);
-	    //System.out.println(d.ent.length);
-	    //System.out.println(d.entries.size());
-	    //String out =  d.entries.get(0).toString();
-	    //System.out.println(out);
-	    //System.out.println(d.ent[0]);
-	    //System.out.println(d.ent[d.ent.length - 1]);
-	    //System.out.println(d.test());
+	   
+	    */
 	} catch (IOException e){
 	    System.out.println("No file found");
 	}
