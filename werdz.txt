@@ -8,3 +8,4 @@ Traube; grape; 1. a berry, typically green (classified as white), purple, red or
 Heidelbeeren; huckleberries; 1. a small, round, edible blue-black berry related to the blueberry.
 Jujube; jujube; 1. the edible berrylike fruit of a Eurasian plant.
 Schnepfenstrauss; kiwi; 1. a flightless New Zealand bird with hairlike feathers, having a long down-curved bill with sensitive nostrils at the tip. 2. a fruit with a thin hairy skin, green flesh, and black seeds;
+Verlag; publishing house; 1. a company that produces books, magazines, and other texts.

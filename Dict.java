@@ -126,7 +126,7 @@ public class Dict{
 	    System.out.println("\n Definition(s): ");
 	    System.out.println(d.findD(input));
 	    System.out.println(d.findD(d.findE(input)));
-	    System.out.println("\n \n");
+	    System.out.println("\n");
 
 	    /*
 	    System.out.println("What function would you like?");

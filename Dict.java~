@@ -78,7 +78,7 @@ public class Dict{
 	String result = "We can't find that word!";
 	for (int i = 0; i < entries.size() ; i++) {
 	    // checks each entry
-	    if ( (entries.get(i).getEng().toLowerCase()).equals(word.toLowerCase())){
+	    if ( (entries.get(i).getEng().toLowerCase()).contains(word.toLowerCase())){
 		result = (entries.get(i)).getWort();
 	    }
 	}
@@ -89,7 +89,7 @@ public class Dict{
 	String result = "We can't find that word!";
 	for (int i = 0; i < entries.size() ; i++) {
 	    
-	    if (  (entries.get(i)).getWort().toLowerCase().contains(gword.toLowerCase())){
+	    if (  (entries.get(i)).getWort().toLowerCase().equals(gword.toLowerCase())){
 		result = (entries.get(i)).getEng();
 	    }
 	}
@@ -99,7 +99,7 @@ public class Dict{
     public String findD(String word){
 	String result = "";
 	for (int i = 0; i < entries.size() ; i++) {
-	    if ((entries.get(i)).getEng().equals(word.toLowerCase())){
+	    if ((entries.get(i)).getEng().contains(word.toLowerCase())){
 		result = (entries.get(i)).getDef();
 	    }
 	}
