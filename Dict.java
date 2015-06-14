@@ -5,6 +5,8 @@ import java.io.*;
 import java.util.*;
 
 public class Dict{
+
+    String notfound = "This word is not found.";
     
     ArrayList<Entry> entries = new ArrayList<Entry>();
     // what each entry is stored at - IN ENTRY FORM
@@ -75,35 +77,32 @@ public class Dict{
     }
 
     public String findG(String word){
-	String result = "We can't find that word!";
 	for (int i = 0; i < entries.size() ; i++) {
 	    // checks each entry
 	    if ( (entries.get(i).getEng().toLowerCase()).contains(word.toLowerCase())){
-		result = (entries.get(i)).getWort();
+		return (entries.get(i)).getWort();
 	    }
 	}
-	return result;
+	return notfound;
     }
 
     public String findE(String gword){
-	String result = "We can't find that word!";
 	for (int i = 0; i < entries.size() ; i++) {
 	    
 	    if (  (entries.get(i)).getWort().toLowerCase().equals(gword.toLowerCase())){
-		result = (entries.get(i)).getEng();
+		return (entries.get(i)).getEng();
 	    }
 	}
-	return result;
+	return notfound;
     }
 
     public String findD(String word){
-	String result = "";
 	for (int i = 0; i < entries.size() ; i++) {
 	    if ((entries.get(i)).getEng().contains(word.toLowerCase())){
-		result = (entries.get(i)).getDef();
+	       return (entries.get(i)).getDef();
 	    }
 	}
-	return result;
+	return notfound;
     }
 
     public static void main(String[] args) throws FileNotFoundException{
@@ -119,13 +118,38 @@ public class Dict{
 	    //	    System.out.print(" words. \n");
 	    System.out.println("Type your word.");
 	    String input = scanner.nextLine();
-	    System.out.println("\n \n English-to-German: ");
-	    System.out.println(d.findG(input));
-	    System.out.println("\n German-to-English: ");
-	    System.out.println(d.findE(input));
+
+	    System.out.println("\n \n German: ");
+	    // System.out.print(d.findG(input));
+	    
+	    if (d.findG(input).equals(d.notfound)) {
+		System.out.println(d.findG(d.findE(input)));
+	    } else {
+		System.out.println(d.findG(input));
+	    }
+	    //System.out.println(d.findG(d.findE(input)));
+
+
+	    System.out.println("\n English: ");
+	    if (d.findE(input).equals(d.notfound)) {
+		System.out.println(d.findE(d.findG(input)));
+	    } else {
+		System.out.println(d.findE(input));
+	    }
+
+	    //System.out.print(d.findE(input));
+	    // System.out.println(d.findE(d.findG(input)));
+
+
 	    System.out.println("\n Definition(s): ");
-	    System.out.println(d.findD(input));
-	    System.out.println(d.findD(d.findE(input)));
+	    if (d.findD(input).equals(d.notfound)) {
+		System.out.println(d.findD(d.findE(input)));
+	    } else {
+		System.out.println(d.findD(input));
+	    }
+
+	    // System.out.print(d.findD(input));
+	    // System.out.println(d.findD(d.findE(input)));
 	    System.out.println("\n");
 
 	    /*

@@ -1,5 +1,5 @@
 Apfel; apple; 1. a round fruit, typically red or green.
-Banane; banana; 1. a long curved fruitthat grows in clusters and has soft pulpy flesh and yellow skin.
+Banane; banana; 1. a long curved fruit that grows in clusters and has soft pulpy flesh and yellow skin.
 Bantaloup-Melone; cantaloupe; 1. a small, round melon of a variety with orange flesh and ribbed skin.
 Durian; durian; 1. an oval spiny tropical fruit containing a creamy pulp.
 Aubergine; eggplant; 1. a large egg-shaped fruit of an Old World plant, eaten as a vegetable. Usually purple.
@@ -13,5 +13,5 @@ Jujube; jujube; 1. the edible berrylike fruit of a Eurasian plant.
 Schnepfenstrauss; kiwi; 1. a flightless New Zealand bird with hairlike feathers, having a long down-curved bill with sensitive nostrils at the tip. 2. a fruit with a thin hairy skin, green flesh, and black seeds;
 Verlag; publishing house; 1. a company that produces books, magazines, and other texts.
 Versicherung; insurance; 1. a means of repayment against future occurrences of uncertain events. 2. the business of insurance.
-wohnen; to live, reside; 1. to inhabit, to have permanent residence somewhere.
 Wohnung; apartment, home; 1. a complete domicile occupying only a part of a building. 1. one's dwelling place.
+zeta; zeta; 1. zeta
