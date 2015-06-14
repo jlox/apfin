@@ -1,17 +1,40 @@
+Antrag; application, request; 1. declaration of seeking after something, i.e. a job. 2. the act of making a request.
+anzeigen; indicate, report; 1. to point out, signal, show. 1. to inform or relate the details of.
 Apfel; apple; 1. a round fruit, typically red or green.
 Banane; banana; 1. a long curved fruit that grows in clusters and has soft pulpy flesh and yellow skin.
 Bantaloup-Melone; cantaloupe; 1. a small, round melon of a variety with orange flesh and ribbed skin.
+Bestimmung; determination, destination, regulation; 1. act of deciding. 1. intended purpose, destiny. 2. designation. 1. a rule to guide behavior or conduct.
+Bewertung; assessment, appraisal; 1. the act of setting a value for something. 2. the value or estimate set for something.
+Bezahlung; payment; 1. offering of currency in exchange for something rendered. 2. offering of currency that is required of an exchange.
+bieten; offer; 1. to bid, place at one's disposal.
+Buero; office; 1. a room or building in which business of an organization is conducted. 2. a unit of business or administration.
+Chance; chance, opportunity; 1. possibility 2. random occurrence, luck. 3. probability.
 Durian; durian; 1. an oval spiny tropical fruit containing a creamy pulp.
 Aubergine; eggplant; 1. a large egg-shaped fruit of an Old World plant, eaten as a vegetable. Usually purple.
 Fiege; fig; 1. a soft pear-shaped fruit with sweet dark flesh and many small seeds, eaten fresh or dried.
-leben; to live; 1. to be alive, to have life
+Frist; deadline, term; 1. limited period of time in which it is acceptable to do something.
+Garantie; guarantee, warranty; 1. assurance of a certain outcome. 2. written declaration that a certain product works correctly.
+Industrie; industry; 1. businesses of the same type, as a whole. 2. businesses that produce goods rather than services.
+Lager; camp, deposit; 1. outdoor place acting as temporary residence. 1. a placement of objects in a certain place for safekeeping.
+leben; to live; 1. to be alive, to have life.
+Leben; life; 1. period of time between birth and death. 2. existence.
+Liebe; love; 1. strong inclination towards something. 2. strong affection.
 lieben; to love; 1. to have a strong affection for. 2. to be strongly inclined towards something.
 Lieferung; delivery, shipment; 1. the act of transporting or carrying something, esp. goods
+Marke; stamp, mark; 1. a sign identifying a company or business. 2. adhesive pieces of paper used for letters to indicate prepayment of costs.
+Markt; market; 1. public place for business and trade. 2. organized system of trade for specified products. 3. group of potential customers for a product.
+Messe; fair; 1. community gathering to exhibit local achievements. 2. event for public entertainment and trade, market. 3. event for professionals to conduct business.
+Miete; rent; 1. payment for the temporary use of an object or residence.
 Traube; grape; 1. a berry, typically green (classified as white), purple, red or black, growing in clusters on a grapevine, eaten as fruit.
 Heidelbeeren; huckleberries; 1. a small, round, edible blue-black berry related to the blueberry.
 Jujube; jujube; 1. the edible berrylike fruit of a Eurasian plant.
 Schnepfenstrauss; kiwi; 1. a flightless New Zealand bird with hairlike feathers, having a long down-curved bill with sensitive nostrils at the tip. 2. a fruit with a thin hairy skin, green flesh, and black seeds;
+Service; service; 1. practice of providing assistance or help, i.e. restaurant service. 2. act of providing assistance.
+Verkauf; sale; 1. exchange of goods or services for currency.
 Verlag; publishing house; 1. a company that produces books, magazines, and other texts.
 Versicherung; insurance; 1. a means of repayment against future occurrences of uncertain events. 2. the business of insurance.
+Werbung; advertisement; 1. a notice aimed to sell a product to the public. 2. the act of advertising.
 Wohnung; apartment, home; 1. a complete domicile occupying only a part of a building. 1. one's dwelling place.
+Zins; interest; 1. price paid for obtaining a loan of money or goods.
+Zoll; toll, custom; 1. tax collected at the borders for transport of something. 2. authority collecting tolls.
 zeta; zeta; 1. zeta
