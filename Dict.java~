@@ -143,9 +143,9 @@ public class Dict{
 
 	    System.out.println("\n Definition(s): ");
 	    if (d.findD(input).equals(d.notfound)) {
-		System.out.println(d.findE(input));
-	    } else {
 		System.out.println(d.findD(d.findE(input)));
+	    } else {
+		System.out.println(d.findD(input));
 	    }
 
 	    // System.out.print(d.findD(input));

@@ -127,8 +127,7 @@ public class Dict{
 	    } else {
 		System.out.println(d.findG(input));
 	    }
-	    //System.out.println(d.findG(d.findE(input)));
-
+	   
 
 	    System.out.println("\n English: ");
 	    if (d.findE(input).equals(d.notfound)) {
@@ -137,10 +136,7 @@ public class Dict{
 		System.out.println(d.findE(input));
 	    }
 
-	    //System.out.print(d.findE(input));
-	    // System.out.println(d.findE(d.findG(input)));
-
-
+	   
 	    System.out.println("\n Definition(s): ");
 	    if (d.findD(input).equals(d.notfound)) {
 		System.out.println(d.findD(d.findE(input)));
@@ -148,34 +144,7 @@ public class Dict{
 		System.out.println(d.findD(input));
 	    }
 
-	    // System.out.print(d.findD(input));
-	    // System.out.println(d.findD(d.findE(input)));
-	    System.out.println("\n");
-
-	    /*
-	    System.out.println("What function would you like?");
-	    System.out.println("1. English to German");
-	    System.out.println("2. German to English");
-	    System.out.println("3. English Definition");
-	    System.out.println("Please select the number of your choice!");
-	    String input = scanner.nextLine();
-	    if (input.equals("1")){
-		System.out.println("What word would you like translated?");
-		input = scanner.nextLine();
-		System.out.println(d.findG(input));
-	    } else if (input.equals("2")){
-		System.out.println("What word would you like translated?");
-		input = scanner.nextLine();
-		System.out.println(d.findE(input));
-	    } else if (input.equals("3")){
-		System.out.println("Which word's definition would you like?");
-		input = scanner.nextLine();
-		System.out.println(d.findD(input));
-	    } else {
-		System.out.println("Sorry, we don't recognize that command. Please make sure you are entering JUST the number of the choice you'd like!");
-	    }
-	   
-	    */
+	   	   
 	} catch (IOException e){
 	    System.out.println("No file found");
 	}
