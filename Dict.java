@@ -29,6 +29,8 @@ public class Dict{
 	    return c;
 	}
     }
+    // calculates file length
+
 
     String ent[] = new String[fileLength()];
     // each entry is a line in werdz
@@ -50,19 +52,19 @@ public class Dict{
     
     public void makeDict(){
 	Entry addit;
-	int i = 0;
+
 	String e;
 	String g; 
 	String d;
-	while (i < ent.length - 1){
+	for (int i = 0; i < ent.length - 1; i++) {
+      
 	    String[] parts = ent[i].split("; ");
 	    e = parts[0];
 	    g = parts[1];
 	    d = parts[2];
 	    addit = new Entry(e,g,d);
-	    //System.out.println(addit.toString());
+	    
 	    entries.add(addit);
-	    i = i + 1;
 	}       
     }
     
@@ -85,40 +87,33 @@ public class Dict{
     }
 
     public String findG(String word){
-	int i = 0;
 	String result = "We can't find that word!";
-	while (i < entries.size()){
-	    //System.out.println(entries.get(i).toString() + "/n");
-	    if ((entries.get(i)).getEng().equals(word)){
+	for (int i = 0; i < entries.size() ; i++) {
+	    // checks each entry
+	    if ( (entries.get(i).getEng().toLowerCase()).equals(word.toLowerCase())){
 		result = (entries.get(i)).getWort();
 	    }
-	    i = i + 1;
 	}
 	return result;
     }
 
     public String findE(String gword){
-	int i = 0;
 	String result = "We can't find that word!";
-	while (i < entries.size()){
-	    //System.out.println(entries.get(i).toString() + "/n");
-	    if ((entries.get(i)).getWort().equals(gword)){
+	for (int i = 0; i < entries.size() ; i++) {
+	    
+	    if (  (entries.get(i)).getWort().toLowerCase().equals(gword.toLowerCase())){
 		result = (entries.get(i)).getEng();
 	    }
-	    i = i + 1;
 	}
 	return result;
     }
 
     public String findD(String word){
-	int i = 0;
 	String result = "We can't find that word!";
-	while (i < entries.size()){
-	    //System.out.println(entries.get(i).toString() + "/n");
+	for (int i = 0; i < entries.size() ; i++) {
 	    if ((entries.get(i)).getEng().equals(word)){
 		result = (entries.get(i)).getDef();
 	    }
-	    i = i + 1;
 	}
 	return result;
     }
